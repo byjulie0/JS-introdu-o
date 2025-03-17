@@ -8,7 +8,91 @@
     Defer exibe os dois juntos, quando o js acaba ele continua o html--->
 </head>
 <body>
-    <!-- <script type="text/javascript">document.write(Date());</script>
-    <button onclick="window.print()">Print this page</button> -->
+    <h1>Quem descobriu o Brasil</h1>
+    <div class="padro" id="a" onclick="fa()">Pedro Álves Cabral </div>
+    <div class="padro" id="a" onclick="fa1()">Valeska Popozuda </div>
+    <div class="padro" id="a" onclick="fa2()">Mc Guime </div>
+    <div class="padro" id="a" onclick="fa3()">Anita </div>
+    <div class="padro" id="a" onclick="fa4()">Neymar </div>
+
+    <script>
+       function fa(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Certa Resposta')
+        }
+        }
+       function fa1(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+       function fa2(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+       function fa3(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+       function fa4(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+            
+    
+    </script>
+
 </body>
 </html>
+
+  <!-- <script>
+        function fa(){
+            var a = window.document.getElementByd("a")
+            a.addEventListener('click', x)
+            function x(){
+                a.innerText = 'Clicou'
+                window.alert('Certa Resposta')
+            }
+        
+        }
+    </script> -->
+    <!-- <p>Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.innerHTML="<i>blue</i>"
+    </script>
+
+ <h1>Quem descobriu o Brasil</h1>
+    <div class="padro" id="a" onclick="fa()">Pedro Álves Cabral </div>
+
+    <script>
+        function fa(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Certa Resposta')
+        }
+    }
+    </script>
+
+-->

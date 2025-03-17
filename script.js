@@ -34,3 +34,89 @@
 //     return p1*p2;
 // }
 // console.log(myFunction(10,20));
+
+// let idade = 16;
+
+// if (idade<=16){
+//     console.log("Adolescente");
+// }
+// else if(idade>16 && idade< 42){
+//     console.log("Adulto");
+// }
+// else{
+//     console.log("Idoso");
+// }
+
+// let menu = 0;
+
+// switch(menu){
+//     case 0:
+//         window.alert("Sair")
+//         break;
+//     case 1:
+//         window.alert("Saldo")
+//         break;
+//         default:
+//         window.alert('Valor Inválido')
+
+// }
+
+// let menu = 0;
+// switch(new Date().getDay()){
+//     case 0:
+//         day='Domigo';
+//         break;
+//     case 1:
+//         day='Segunda';
+//         break;
+//     case 2:
+//         day='Terça';
+//         break;
+//     case 3:
+//         day='Quarta';
+//         break;
+//     case 4:
+//         day='Quinta';
+//         break;
+//     case 5:
+//         day='Sexta';
+//         break;
+//     case 6:
+//         day='Sabado';
+//         break;
+                    
+
+// }
+// window.alert(day);
+// var i = 0
+// while(i<10){
+//     var text;
+//     text = "O número é "+i;
+//     console.log(text);
+//     i++;
+// }
+
+// let i = 10
+//     do{
+//         text = 'The number is' +i;
+//         i++;
+//         console.log(text);
+//     }
+//     while(i<10);
+
+//     for(var i = 0; i<9; i++){
+//         console.log(i);
+//     }
+// window.onload = function(){
+//     var p1 = window.document.getElementsByTagName('p')[1]
+//     p1.style.background="blue"
+// }
+// function fa(){
+
+//     var a = window.document.getElementById("a")
+//     a.addEventListener('click', x)
+//     function x(){
+//         a.innerText = 'Clicou'
+//         window.alert('Certa Resposta')
+//     }
+// };
