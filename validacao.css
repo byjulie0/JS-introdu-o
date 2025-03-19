@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 8%;
+}
+.span-required{
+    display: none;
+    color: red;
+}
+.form-validacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 12px;
+}
+input{
+    padding: 10px;;
+
+}
+input:hover{
+    border: solid 2px blue;
+
+}
