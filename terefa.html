@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JS</title>
+    <script async src="script.js"></script> <!--async é utilizado para carregar primeiro o html, antes do alert. Quando para o js ele para o html também, só continua depois do Ok
+    Defer exibe os dois juntos, quando o js acaba ele continua o html--->
+</head>
+<body>
+    <h1>Quem descobriu o Brasil</h1>
+    <div class="padro" id="a" onclick="fa()">Pedro Álves Cabral </div>
+    <div class="padro" id="a" onclick="fa1()">Valeska Popozuda </div>
+    <div class="padro" id="a" onclick="fa2()">Mc Guime </div>
+    <div class="padro" id="a" onclick="fa3()">Anita </div>
+    <div class="padro" id="a" onclick="fa4()">Neymar </div>
+
+    <script>
+       function fa(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x(){
+            a.innerText = 'Clicou'
+            window.alert('Certa Resposta')
+        }
+        }
+       function fa1(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x1(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+       function fa2(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x2(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+       function fa3(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x3(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+       function fa4(){
+        var a = window.document.getElementById("a")
+        a.addEventListener('click', x)
+        function x4(){
+            a.innerText = 'Clicou'
+            window.alert('Resposta Errada')
+        }
+        }
+            
+    
+    </script>
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,116 @@
     <script async src="script.js"></script> <!--async é utilizado para carregar primeiro o html, antes do alert. Quando para o js ele para o html também, só continua depois do Ok
     Defer exibe os dois juntos, quando o js acaba ele continua o html--->
 </head>
+
 <body>
-    <h1>Quem descobriu o Brasil</h1>
+    <div>
+        <input type="text" placeholder="Digite seu Email" class="input required" oninput=" emailValidate()"> 
+        <span class="span-required">O email deve ter possuir o padrão email@empresas.com.br</span>
+    </div>
+    <style>
+        .span-required{
+            display: none;
+        }
+    </style>
+    <!-- <h1>Quem descobriu o Brasil</h1>
     <div class="padro" id="a" onclick="fa()">Pedro Álves Cabral </div>
     <div class="padro" id="a" onclick="fa1()">Valeska Popozuda </div>
     <div class="padro" id="a" onclick="fa2()">Mc Guime </div>
     <div class="padro" id="a" onclick="fa3()">Anita </div>
-    <div class="padro" id="a" onclick="fa4()">Neymar </div>
+    <div class="padro" id="a" onclick="fa4()">Neymar </div> -->
 
-    <script>
-       function fa(){
-        var a = window.document.getElementById("a")
-        a.addEventListener('click', x)
-        function x(){
-            a.innerText = 'Clicou'
-            window.alert('Certa Resposta')
+    <script defer>
+
+        const inputs = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.span-required');
+        const email = /^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+
+        function emailValidate(){
+            if(email.test(inputs[0].value)){
+                revomeErro(0)
+            }
+            else{
+                setErro(0)
+            }
         }
+        function revomeErro(index){
+            spans[index].style.display ='none';
+
         }
-       function fa1(){
-        var a = window.document.getElementById("a")
-        a.addEventListener('click', x)
-        function x(){
-            a.innerText = 'Clicou'
-            window.alert('Resposta Errada')
+        function setErro(index){
+            spans[index].style.display ='block';
+            spans[index].style.color ='red';
+
         }
-        }
-       function fa2(){
-        var a = window.document.getElementById("a")
-        a.addEventListener('click', x)
-        function x(){
-            a.innerText = 'Clicou'
-            window.alert('Resposta Errada')
-        }
-        }
-       function fa3(){
-        var a = window.document.getElementById("a")
-        a.addEventListener('click', x)
-        function x(){
-            a.innerText = 'Clicou'
-            window.alert('Resposta Errada')
-        }
-        }
-       function fa4(){
-        var a = window.document.getElementById("a")
-        a.addEventListener('click', x)
-        function x(){
-            a.innerText = 'Clicou'
-            window.alert('Resposta Errada')
-        }
-        }
-            
+
+
+
+        // let cpf = /^([0-9]{3}\.[0-9]{3}\-[0-9]{2})$/;
+        // document.write(cpf.test("957.877.555-55"))
+        // let data = /^(0[1-9]|1[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;
+        // document.write(data.test("22/04/2120"))
+        // let ano = /^\d{4}$/;
+        // document.write(ano.test("2024"))
+        // var dia = /^(0[1-9]|1[0-9]|2[0-9]|3[0-1])$/;
+        // document.write(dia.test("31"))
+        // document.write(/^\d{2}\/\d{2}\/\d{4}$/.test('21/05/2007'));
+        // document.write(/[az]/i.test("AZ"));
+        // document.write(/[love]/i.test("lovE"));
+        // document.write(/[x]/i.test("123x"));
+        // document.write(/[sw]/i.test("w"));
     
+
+        //    function fa(){
+        //     var a = window.document.getElementById("a")
+        //     a.addEventListener('click', x)
+        //     function x(){
+        //         a.innerText = 'Clicou'
+        //         window.alert('Certa Resposta')
+        //     }
+        //     }
+        //    function fa1(){
+        //     var a = window.document.getElementById("a")
+        //     a.addEventListener('click', x)
+        //     function x(){
+        //         a.innerText = 'Clicou'
+        //         window.alert('Resposta Errada')
+        //     }
+        //     }
+        //    function fa2(){
+        //     var a = window.document.getElementById("a")
+        //     a.addEventListener('click', x)
+        //     function x(){
+        //         a.innerText = 'Clicou'
+        //         window.alert('Resposta Errada')
+        //     }
+        //     }
+        //    function fa3(){
+        //     var a = window.document.getElementById("a")
+        //     a.addEventListener('click', x)
+        //     function x(){
+        //         a.innerText = 'Clicou'
+        //         window.alert('Resposta Errada')
+        //     }
+        //     }
+        //    function fa4(){
+        //     var a = window.document.getElementById("a")
+        //     a.addEventListener('click', x)
+        //     function x(){
+        //         a.innerText = 'Clicou'
+        //         window.alert('Resposta Errada')
+        //     }
+        //     }
+
+       
+
+
     </script>
 
 </body>
+
 </html>
 
-  <!-- <script>
+<!-- <script>
         function fa(){
             var a = window.document.getElementByd("a")
             a.addEventListener('click', x)
@@ -74,7 +128,7 @@
         
         }
     </script> -->
-    <!-- <p>Parágrafo 1</p>
+<!-- <p>Parágrafo 1</p>
     <p>Parágrafo 2</p>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
